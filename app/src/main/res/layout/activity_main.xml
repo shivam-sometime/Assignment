@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.Search.SearchActivity">
+
+
+    <EditText
+        android:id="@+id/et_search_keyword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Bagels"
+        android:inputType="text"
+        android:maxLines="1"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="72dp"
+        android:layout_marginRight="72dp"
+        android:padding="4dp"
+        android:text="Search"
+        android:textSize="16dp"
+        android:textAlignment="center"
+        android:background="#CDDC39"
+        android:onClick="onClick"/>
+
+
+    <ExpandableListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:groupIndicator="@null"
+        android:divider="@null"
+        android:background="@color/colorPrimary"
+        android:choiceMode="singleChoice"
+        android:id="@+id/expandableList" />
+
+</LinearLayout>
+
+
+
+
